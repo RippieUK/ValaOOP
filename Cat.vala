@@ -16,7 +16,7 @@ namespace OOP {
         }
 
         public void print_name () {
-            stdout.printf ("My name is %s\n", name);
+            stdout.printf ("Name is : %s\n", name);
         }
 
         public void feed () {

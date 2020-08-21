@@ -4,18 +4,25 @@ namespace OOP {
         private int hunger = 5;
         private int weight = 5;
 
-        public string name { get; construct; }
+        public string colour { get; construct; }
+        public string name { get; private set; }
 
-        public Dog (string _name) {
-            Object (name: _name);
+        public Dog (string _colour) {
+            Object (
+                colour: _colour
+            );
         }
 
         construct {
-            stdout.printf ("New dog object was created. The dog's name is %s", name);
+            stdout.printf ("New dog object was created. The colour is %s\n", colour);
+        }
+
+        public void name_set (string _name) {
+            this.name = _name;
         }
 
         public void print_name () {
-            stdout.printf ("My name is %s\n", name);
+            stdout.printf ("Name is : %s\n", name);
         }
 
         public void feed () {
