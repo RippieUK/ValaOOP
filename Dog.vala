@@ -1,3 +1,16 @@
+/*
+Below we are doubg a GLib style object creation but we are also
+using the non GLib object construct so that we can pass the argument
+`colour` in during creation. Without this non GLib style, this would
+not be possible.
+
+Colour will not change for a dog after creation, hence why i made it 
+a construct so it can only be set during construct.
+
+Name can change many times after creation, hence why i made that a private set.
+I made it private set because i want the class to control how to set the property
+which would also allow us to validate code inside that method if we so wanted to.
+*/
 namespace OOP {
     public class Dog : GLib.Object {
 
