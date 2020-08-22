@@ -17,6 +17,12 @@ namespace OOP {
         rabbit.name_print ();
         rabbit.colour_set ("White");
         rabbit.colour_print ();
+
+        GLib.print ("New person object\n");
+        var john = new Person ("John", "White", "Male");
+        GLib.print ( "%d\n", john.weight );
+        //john.eat ();
+        //GLib.print ( john.weight );
         
         return 0;
     }
