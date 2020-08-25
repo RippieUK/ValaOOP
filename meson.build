@@ -7,7 +7,7 @@ gnome = import('gnome')
 
 executable(
     meson.project_name(),
-    'src/main.vala',
+    'main.vala',
     'src/Person.vala',
     'src/Cat.vala',
     'src/Dog.vala',
