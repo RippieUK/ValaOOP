@@ -1,3 +1,5 @@
 valaoop
 NotifySignal
 *~
+build/
+builddir/
